@@ -1,0 +1,316 @@
+/*-- -------------------------- -->
+<---   Menu                     -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #menu {
+        padding-top: 50/16em;
+        padding-bottom: 15%;
+        position: relative;
+        z-index: 5;
+
+        .container {
+            width: 96%;
+            max-width: 1322/16em;
+            padding: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 80/16em;
+
+            .menu-section {
+                display: flex;
+                flex-direction: column;
+                gap: 20/16em;
+
+                .menu-image {
+                    display: block;
+                    width: 100%;
+                    height: 300/16em;
+                    border-radius: 8/16em;
+                    overflow: hidden;
+                    margin-top: 40/16em;
+                    margin-left: auto; /* Centers horizontally */
+                    margin-right: auto; /* Centers horizontally */
+                    justify-content: center;
+                    align-items: center;
+                
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 8/16em;
+                        object-position: center;
+                    }
+                }
+
+                .menu-header {
+                    text-align: center;
+                    h1 {
+                        font-size: ~"min(3.5vw, 3em)";
+                        color: #333;
+                        margin-top: 20/16em;
+                    }
+                }
+
+                .menu-items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20/16em;
+
+                    .menu-row {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 30/16em;
+
+                        .menu-item {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 50%;
+                            padding: 10/16em;
+                            border-bottom: 1px solid #ccc;
+
+                            .dish-name {
+                                font-size: ~"min(3vw, 2em)";
+                                color: #555;
+                                width: 45%;
+                            }
+
+                            .dish-price {
+                                font-size: ~"min(3vw, 2em)";
+                                color: #000;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 64em) {
+
+    #menu {
+        padding-top: 70/16em;
+        padding-bottom: 15%;
+        position: relative;
+        z-index: 5;
+
+        .container {
+            width: 96%;
+            max-width: 1322/16em;
+            padding: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 80/16em;
+
+            .menu-section {
+                display: flex;
+                flex-direction: column;
+                gap: 28/16em;
+                    .menu-image {
+                        display: block;
+                        width: 80%;
+                        height: 500/16em;
+                        border-radius: 8/16em;
+                        overflow: hidden;
+                        margin-top: 40/16em;
+                        margin-left: auto; /* Centers horizontally */
+                        margin-right: auto; /* Centers horizontally */
+                        justify-content: center;
+                        align-items: center;
+                    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 8/16em;
+                            object-position: center;
+                        }
+
+
+                        .menu-header {
+                            text-align: center;
+                            h1 {
+                                font-size: ~"min(3vw, 2.5em)";
+                                color: #333;
+                                margin-top: 20/16em;
+                            }
+                        }
+        
+                        .menu-items {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20/16em;
+        
+                            .menu-row {
+                                display: flex;
+                                justify-content: space-between;
+                                gap: 30/16em;
+        
+                                .menu-item {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    width: 50%;
+                                    padding: 10/16em;
+                                    border-bottom: 1px solid #ccc;
+        
+                                    .dish-name {
+                                        font-size: ~"min(2.0vw, 1.3em)";
+                                        color: #555;
+                                    }
+        
+                                    .dish-price {
+                                        font-size: ~"min(3.2vw, 1.5em)";
+                                        color: #000;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #cta {
+        position: relative;
+        padding: 50/16em 0;
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: #000;
+            opacity: .7;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        picture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -2;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .title {
+            font-weight: 900;
+            font-size:~"min(9vw, 3em)";
+            line-height: 58/48;
+            color: #fff;
+            position: relative;
+            margin-bottom: 36/48em;
+            text-align: center;
+        }
+
+        p {
+            color: #fff;
+            text-align: center;
+            opacity: 1;
+            margin: auto;
+            margin-bottom: 36/18em;
+            width: 96%;
+            max-width: 598/18em;
+
+        }
+    }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+    #cta {
+        padding: 168/16em 0;
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+    #cta {
+        position: relative;
+        margin-top: 100/16em;
+        &:before {
+            display: none;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 1108/16em;
+            width: 2000/16em;
+            background: url("../images/cta-squares.svg");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -3;
+         }
+        .container {
+            width: 90.0625%;
+            margin: auto;
+        }
+
+        picture {
+            width: 90.0625%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                opacity: .7;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+    body.dark-mode {
+        #cta {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
