@@ -39,6 +39,39 @@
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
     <title>Company Name | Contact Us | Town and State</title>
+    <style>
+        form {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background: #f9f9f9;
+        }
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        input, textarea, select, button {
+          width: 100%;
+          margin-bottom: 15px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+        button {
+          background: #007BFF;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #0056b3;
+        }
+      </style>
+      
 </head>
 <body>
     <!--Screen reader skip main nav-->
@@ -244,6 +277,52 @@
                 </div>
             </div>
           </section>
+
+
+          <form 
+  name="job-application" 
+  method="POST" 
+  data-netlify="true" 
+  enctype="multipart/form-data"
+>
+  <input type="hidden" name="form-name" value="job-application" />
+
+  <!-- Name Field -->
+  <label for="name">Name (required):</label>
+  <input type="text" id="name" name="name" required />
+
+  <!-- Phone Field -->
+  <label for="phone">Phone (required):</label>
+  <input type="tel" id="phone" name="phone" required />
+
+  <!-- Email Field -->
+  <label for="email">Email (required):</label>
+  <input type="email" id="email" name="email" required />
+
+  <!-- Experience Field -->
+  <label for="experience">Experience (required):</label>
+  <textarea id="experience" name="experience" required></textarea>
+
+  <!-- Applying for Field -->
+  <label for="position">Applying for:</label>
+  <select id="position" name="applying-for" required>
+    <option value="">-- Select Position --</option>
+    <option value="server">Server</option>
+    <option value="kitchen">Kitchen</option>
+  </select>
+
+  <!-- Cover Letter Field -->
+  <label for="cover-letter">Cover Letter (optional):</label>
+  <textarea id="cover-letter" name="cover-letter"></textarea>
+
+  <!-- Resume Upload -->
+  <label for="resume">Upload Resume (optional):</label>
+  <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+
+  <!-- Submit Button -->
+  <button type="submit">Submit Application</button>
+</form>
+
           
 
     </main>
