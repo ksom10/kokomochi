@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Swap our for actual link-->
-    <link rel="canonical" href="https://www.company.com/about">
+    <link rel="canonical" href="https://www.company.com/contact">
 
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -23,7 +23,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v1">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="./site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -33,18 +33,65 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="./css/root.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/dark.css">
 
     <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
-    <title>Company Name | About Us | Town and State</title>
+    <title>Company Name | Contact Us | Town and State</title>
+
+
+    <style>
+        form {
+          max-width: 600px;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background: #f9f9f9;
+        }
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+        input, textarea, select, button {
+          width: 100%;
+          margin-bottom: 15px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+        button {
+          background: #007BFF;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        button:hover {
+          background: #0056b3;
+        }
+
+        .career-header {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 45px;
+        }
+
+        .career-desc {
+          text-align: center;
+          margin-bottom: 20px;
+          font-size: 25px;
+        }
+      </style>
+      
 </head>
 <body>
     <!--Screen reader skip main nav-->
     <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
 
-     <!-- ============================================ -->
+      <!-- ============================================ -->
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
@@ -69,10 +116,10 @@
             <nav id="navbar-menu">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a class="active" href="./about.html">About Us</a></li>
+                    <li><a href="./about.html">About Us</a></li>
                     <li><a href="./menu.html">Menu</a></li>
                     <li><a href="./reviews.html">Reviews</a></li>
-                    <li><a href="./careers.html">Careers</a></li>
+                    <li><a class="active" href="./careers.html">Careers</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li><a href="./contact.html">Order</a></li>
                 </ul>
@@ -86,7 +133,6 @@
             </button>
         </div>
     </div>
-
     <main id="main">
 
         <!-- ============================================ -->
@@ -94,95 +140,83 @@
         <!-- ============================================ -->
     
         <section id="int-hero">
-            <h1 id="home-h">About Us</h1>
+            <h1 id="home-h">Careers</h1>
             <picture>
-                <source media="(max-width: 600px)" srcset="./images/main-m.jpg">
-                <source media="(min-width: 601px)" srcset="./images/main.jpg">
-                <img aria-hidden="true" decoding="async" src="./images/main.jpg" alt="cabinets" width="400" height="662">
+                <source media="(max-width: 600px)" srcset="./images/staff-m.jpg">
+                <source media="(min-width: 601px)" srcset="./images/staff.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/staff.jpg" alt="" width="400" height="662">
             </picture>
         </section>
 
         <!-- ============================================ -->
-        <!--                   About                      -->
+        <!--                    FORM                      -->
         <!-- ============================================ -->
 
-        <section id="sidebyside" class="sidebyside">
-            <div class="container">
-                <div class="content">
-                    <h2 class="title">Lorem ipsum dolor sit amet consectetur.</h2>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam debitis dolor consectetur dolorem inventore modi tenetur ex odit, amet beatae ad, doloribus tempora quae ab nulla minus temporibus at veritatis!
-                     </p>
-                     <p>
-                         <strong>List if you need it:</strong>
-                      </p>
-                     <ul>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                        <li>
-                            <img aria-hidden="true" loading="lazy" decoding="async" src="./images/check.svg" alt="check mark" width="20" height="20">
-                            <span>List item about something</span>
-                        </li>
-                    </ul>
-                     <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe laborum nam consequuntur porro inventore odio? Quod autem alias ratione cum reiciendis qui quaerat, sequi voluptatum voluptatibus, iusto itaque sed ullam. Quis, maiores corrupti. Rerum quo laudantium vero magnam tempora!
-                     </p>
-                     <a class="button-solid-dark" href="./contact.html">Get Free Quote</a>
-                </div>
-                <picture class="image-box">
-                     <source media="(max-width: 600px)" srcset="./images/salmon.jpg">
-                     <source media="(min-width: 601px)" srcset="./images/salmon.jpg">
-                     <img aria-hidden="true" loading="lazy" decoding="async" src="./images/salmon.jpg" alt="cabinets" width="400" height="662">
-                 </picture>
+        <section id="form">
+            <div>
+              <h2 class="career-header">We Are Hiring!</h2>
+              <p class="career-desc">We are always looking for passionate and talented individuals to join our team. If you're ready to make an impact, we’d love to hear from you!</p>              
+              <form 
+                name="job-application" 
+                method="POST" 
+                data-netlify="true" 
+                enctype="multipart/form-data"
+                >
+                <input type="hidden" name="form-name" value="job-application" />
+
+                <!-- Name Field -->
+                <label for="name">Name (required):</label>
+                <input type="text" id="name" name="name" required />
+
+                <!-- Phone Field -->
+                <label for="phone">Phone (required):</label>
+                <input type="tel" id="phone" name="phone" required />
+
+                <!-- Email Field -->
+                <label for="email">Email (required):</label>
+                <input type="email" id="email" name="email" required />
+
+                <!-- Experience Field -->
+                <label for="experience">Experience (required):</label>
+                <textarea id="experience" name="experience" required></textarea>
+
+                <!-- Applying for Field -->
+                <label for="position">Applying for:</label>
+                <select id="position" name="applying-for" required>
+                    <option value="">-- Select Position --</option>
+                    <option value="server">Server</option>
+                    <option value="kitchen">Kitchen</option>
+                </select>
+
+                <!-- Cover Letter Field -->
+                <label for="cover-letter">Cover Letter (optional):</label>
+                <textarea id="cover-letter" name="cover-letter"></textarea>
+
+                <!-- Resume Upload -->
+                <label for="resume">Upload Resume (optional):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" />
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Application</button>
+                </form>
+
             </div>
-       </section>
-
-         <!-- ============================================ -->
-        <!--             Final Call to Action             -->
-        <!-- ============================================ -->
-
-        <section id="cta">
-            <div class="container">
-                <h2 class="title">Satisfy Your Cravings <br> With Us Today</h2>
-                <p>
-                    Ready to experience the sizzling flavors of Kokomochi Hibachi Express? Contact us to learn more, plan your visit, or place your order. We’re here to make your next meal unforgettable!
-                </p>
-                <a href="./contact.html" class="button-solid">Order Now</a>
-            </div>
-            
-            <picture>
-                <source media="(max-width: 600px)" srcset="./images/takeout-m.jpg">
-                <source media="(min-width: 601px)" srcset="./images/takeout.jpg">
-                <img aria-hidden="true" loading="lazy" decoding="async" src="./images/takeout.jpg" alt="takeout" width="1920" height="1280">
-             </picture>
-        </section>
-
-      
+          </section>
+          
 
     </main>
 
     <!-- ============================================ -->
-    <!--                     FOOTER                   -->
+    <!--                   Footer                     -->
     <!-- ============================================ -->
 
     <footer id="footer">
         <div class="container">
             <div class="left-section">
                 <a class="logo" href="./index.html"><img loading="lazy" decoding="async" src="./images/logo-light.png" alt="logo" width="264" height="78"></a>
+                <p>
+                    Extra content if you need it, if not you can delete this whole p tag. I usually do.
+                </p>
             </div>
             <div class="right-section">
                 <div class="lists">
@@ -216,7 +250,6 @@
             <a href="" target="_blank" rel="noopener">Your Company Name</a>
             <span class="copyright"> Copyright 2021 - Present</span></div>
     </footer>
-
 
     <script defer src="./nav.js"></script>
     <script defer src="./dark.js"></script>
